@@ -7,13 +7,13 @@ public class BinaryTree{
 
     Node root = null;
 
-    String linea;
+    String line;
 
-    while((linea = sc.nextLine()) != null){
-      char c = linea.charAt(0);
+    while((line = sc.nextLine()) != null){
+      char c = line.charAt(0);
 
       if(c == 'a'){     // Add node
-        int n = new Integer(linea.split(" ")[1]);
+        int n = new Integer(line.split(" ")[1]);
 
         if(root == null)
           root = new Node(n);
@@ -25,12 +25,17 @@ public class BinaryTree{
         System.out.println();
       }
       else if(c == 'f'){     // Find node
-        int n = new Integer(linea.split(" ")[1]);
+        int n = new Integer(line.split(" ")[1]);
 
         if(search(root, n))
           System.out.println("Found!");
         else
           System.out.println("Not found :(");
+      }
+      else if(d == 'd'){
+        int n = new Integer(line.split(" ")[1]);
+
+        System.out.println("Not implemented!");
       }
       // else
     }
