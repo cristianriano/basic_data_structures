@@ -26,6 +26,7 @@ public class StackMain{
         System.out.println(""+stack.getPeak());
       }
       else if(c == 'c'){
+        stack.clean();
         System.out.println("Cleaned!");
       }
       else{
